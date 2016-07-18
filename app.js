@@ -17,6 +17,7 @@ try {
 //Push result to object....
 for( var count = 0 ; count < input.length ; count++ ){
     var errorMessage = engine.getExecuteOnText(input[count].message);
+    console.log(errorMessage.results[0]);
     var Label = input[count].Label;
     var Rules = engine.getDictionary2();
     var countRules =  engine.getCountRules(errorMessage,Rules);
@@ -27,6 +28,7 @@ for( var count = 0 ; count < input.length ; count++ ){
         countRules: countRules,
         Label : Label});
 }
-//convertToCSV(result);
+
+//engine.convertToCSV(result, input);
 // print the result from eslint
-engine.printMessages(result, input);
+//engine.printMessages(result, input);

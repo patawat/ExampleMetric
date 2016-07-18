@@ -2,7 +2,8 @@
 
 
 var fs = require('fs');
-var CLIEngine = require('./eslint/lib/cli-engine.js');
+var CLIEngine = require("eslint").CLIEngine;
+//var CLIEngine = require('./eslint/lib/cli-engine.js');
 
 /**
  * @constructor
@@ -12,11 +13,21 @@ function mainEngine(){
 
 mainEngine.prototype = {
     getExecuteOnText : function(text){
-        var cli = new CLIEngine();
+    //     var cli = new CLIEngine();
+        var cli = new CLIEngine({
+        //"rulePaths": ["/Users/patawat/Desktop/ExampleMetric/feature"]
+        //     envs: ["browser", "mocha"],
+        //     useEslintrc: false,
+            rules: {
+                "semi": 2,
+                "max-len": 2
+            }
+        });
         return cli.executeOnText(text,"test");
     },
     getExecuteOnFile: function(filename){
-        var cli = new CLIEngine();
+        // var cli = new CLIEngine();
+
         return cli.executeOnFile(filename);
     },
 
@@ -114,12 +125,11 @@ mainEngine.prototype = {
                 dict[messageError[countRules].ruleId] += 1;
             }
         }
-        //console.log(dict);
         return dict;
     },
 
     //convert to CSV
-    convertToCSV : function(result){
+    convertToCSV : function(result, input){
 
         var B = [];
         var inputJSON = require("./rules.json");
@@ -133,7 +143,6 @@ mainEngine.prototype = {
 
         for(var count = 0 ; count < input.length ; count++){
             var c = [];
-            console.log(count);
             for(var count2 = 0 ; count2 < inputJSON.rules.length ; count2++){
                 c.push(result[count].countRules[inputJSON.rules[count2].key]);
             }
@@ -151,9 +160,7 @@ mainEngine.prototype = {
         fs.writeFile('result.csv',  csvString , function (err) {
             if (err) return console.log(err);
         });
-
     }
-
 }
 
 module.exports = mainEngine;
