@@ -6,6 +6,10 @@ Download from www.nodejs.org
 ```
 $ npm install eslint
 ```
+### Step 3: Run nodejs
+```
+$ node app.js
+```
 ### License
 ### Developer
 Mr. Patawat Watakul, Kasetsart University

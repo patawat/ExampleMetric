@@ -3,7 +3,6 @@
 
 var fs = require('fs');
 var CLIEngine = require("eslint").CLIEngine;
-//var CLIEngine = require('./eslint/lib/cli-engine.js');
 
 /**
  * @constructor
@@ -13,21 +12,10 @@ function mainEngine(){
 
 mainEngine.prototype = {
     getExecuteOnText : function(text){
-    //     var cli = new CLIEngine();
-        var cli = new CLIEngine({
-        //"rulePaths": ["/Users/patawat/Desktop/ExampleMetric/feature"]
-        //     envs: ["browser", "mocha"],
-        //     useEslintrc: false,
-            rules: {
-                "semi": 2,
-                "max-len": 2
-            }
-        });
+        var cli = new CLIEngine();
         return cli.executeOnText(text,"test");
     },
     getExecuteOnFile: function(filename){
-        // var cli = new CLIEngine();
-
         return cli.executeOnFile(filename);
     },
 

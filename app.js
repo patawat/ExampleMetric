@@ -11,9 +11,6 @@ try {
     console.log(e);
 }
 
-//get dictionary part
-//var dict = getDictionary();
-
 //Push result to object....
 for( var count = 0 ; count < input.length ; count++ ){
     var errorMessage = engine.getExecuteOnText(input[count].message);
