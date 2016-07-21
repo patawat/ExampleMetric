@@ -1,7 +1,10 @@
 "use strict";
 
-var mainEngine = require('./main.js');
-var engine = new mainEngine();
+var rules = require('./featureList')
+
+var mainEngine= require('./mainEngine.js');
+var fs = require('fs');
+
 var result = [];
 
 var input;
@@ -11,21 +14,42 @@ try {
     console.log(e);
 }
 
-//Push result to object....
-for( var count = 0 ; count < input.length ; count++ ){
-    var errorMessage = engine.getExecuteOnText(input[count].message);
-    console.log(errorMessage.results[0]);
-    var Label = input[count].Label;
-    var Rules = engine.getDictionary2();
-    var countRules =  engine.getCountRules(errorMessage,Rules);
-    result.push({
-        inputText : input[count].message,
-        errorMessage: errorMessage,
-        coutError: engine.countMessage(errorMessage),
-        countRules: countRules,
-        Label : Label});
+function convertToCSV(result){
+    var B = [];
+    //var inputJSON = require("./rules.json");
+    for(var count = 0 ; count < rules.length ; count++){
+        B.push(rules[count]);
+    }
+
+    var A = [];
+    A.push(B);
+
+    for(var count = 0 ; count < result.length ; count++){
+        var c = [];
+        for(var count2 = 0 ; count2 < rules.length ; count2++){
+            var map = result[count];
+            c.push(map[rules[count2]]);
+        }
+
+        A.push(c);
+    }
+
+    var csvRows = [];
+    for(var i=0, l = A.length ; i < l ; ++i){
+        csvRows.push( A[i].join(',') ); // unquoted CSV row
+    }
+
+    var csvString = csvRows.join('\n');
+
+    fs.writeFile('result.csv',  csvString , function (err) {
+        if (err) return console.log(err);
+    });
 }
 
-//engine.convertToCSV(result, input);
-// print the result from eslint
-//engine.printMessages(result, input);
+for( var count = 0 ; count < input.length ; count++ ){
+    var engine = new mainEngine(input[count].message);
+    result.push(engine.getResult());
+}
+
+console.log(result);
+convertToCSV(result);
