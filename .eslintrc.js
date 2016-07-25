@@ -5,8 +5,6 @@ module.exports = {
   ////////// Possible Errors //////////
 
       "no-comma-dangle": 1,         // disallow trailing commas in object literals
-      "no-constant-condition": 1,   // disallow use of constant expressions in conditions
-      "no-control-regex": 1,        // disallow control characters in regular expressions
       "no-extra-boolean-cast": 1,   // disallow double-negation boolean casts in a boolean context
       "no-extra-semi": 1,           // disallow unnecessary semicolons
       ////////// Best Practices //////////
@@ -17,13 +15,11 @@ module.exports = {
       "eqeqeq": 1,                // require the use of === and !==
       "no-case-declarations": 1,
       "no-floating-decimal": 1,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
-      "no-multi-spaces": 1,       // disallow use of multiple spaces
       "no-multi-str": 1,          // disallow use of multiline strings
       "vars-on-top": 1,           // requires to declare all vars on top of their containing scope (off by default)
 
       ////////// Variables //////////
 
-      "no-shadow": 1,                   // disallow declaration of variables already declared in the outer scope
       "no-unused-vars": 1,              // disallow declaration of variables that are not used in the code
       "no-use-before-define": 1,        // disallow use of variables before they are defined
 
@@ -32,10 +28,6 @@ module.exports = {
       "id-length" : 1,
       "new-cap": 1,                   // require a capital letter for constructors
       "semi": 1,                      // require or disallow use of semicolons instead of ASI
-      "space-before-blocks": 1,       // require or disallow space before blocks (off by default)
-      "space-in-brackets": 1,         // require or disallow spaces inside brackets (off by default)
-      "space-in-parens": 1,           // require or disallow spaces inside parentheses (off by default)
-      "space-infix-ops": 1,           // require spaces around operators
 
       ////////// Legacy //////////
 

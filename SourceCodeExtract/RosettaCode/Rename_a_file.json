@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Rename_a_file","codeArray":["var fso = new ActiveXObject(\"Scripting.FileSystemObject\");\n  fso.MoveFile('input.txt', 'output.txt');\n  fso.MoveFile('c:/input.txt', 'c:/output.txt');\n  fso.MoveFolder('docs', 'mydocs');\n  fso.MoveFolder('c:/docs', 'c:/mydocs');"],"uncertainCodeArray":[],"textArray":[]}

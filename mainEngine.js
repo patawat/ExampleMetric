@@ -35,6 +35,7 @@ function mapping(errorMessage, sloc){
         }
         map["LOC"] = sloc.total;
         map["NCLOC"] = sloc.comment;
+        
     return map;
 }
 

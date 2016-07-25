@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Formatted_numeric_output","codeArray":["var n = 123;\n  var str = (\"00000\" + n).slice(-5);\n  alert(str);"],"uncertainCodeArray":[],"textArray":[]}

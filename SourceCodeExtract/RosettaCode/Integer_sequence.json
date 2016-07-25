@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Integer_sequence","codeArray":["var i = 0;\n  while (true)\n      document.write(++i + ' ');"],"uncertainCodeArray":[],"textArray":[]}

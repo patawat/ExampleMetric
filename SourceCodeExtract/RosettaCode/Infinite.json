@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Loops/Infinite","codeArray":["for (;;) console.log(\"SPAM\");while (true) console.log(\"SPAM\");"],"uncertainCodeArray":[],"textArray":[]}

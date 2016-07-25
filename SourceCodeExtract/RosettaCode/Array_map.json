@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Array_map","codeArray":["console.log([1, 6, 3].map(function(n){return n+1;})); // Returns [2, 7, 4]var numbers = [1, 4, 9];\n  var roots = numbers.map(Math.sqrt);\n  // roots is now [1, 2, 3], numbers is still [1, 4, 9]"],"uncertainCodeArray":[],"textArray":[]}

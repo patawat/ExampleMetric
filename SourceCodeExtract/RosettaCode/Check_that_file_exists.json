@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Check_that_file_exists","codeArray":["var fso = new ActiveXObject(\"Scripting.FileSystemObject\");\n  fso.FileExists('input.txt');\n  fso.FileExists('c:/input.txt');\n  fso.FolderExists('docs');\n  fso.FolderExists('c:/docs');"],"uncertainCodeArray":[],"textArray":[]}

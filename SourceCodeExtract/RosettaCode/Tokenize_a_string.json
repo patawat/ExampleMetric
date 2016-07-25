@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Tokenize_a_string","codeArray":["alert( \"Hello,How,Are,You,Today\".split(\",\").join(\".\") );"],"uncertainCodeArray":[],"textArray":[]}

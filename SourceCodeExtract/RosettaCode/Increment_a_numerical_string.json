@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Increment_a_numerical_string","codeArray":["var s = \"12345\";\n  s = (Number(s) + 1).toString();"],"uncertainCodeArray":[],"textArray":[]}

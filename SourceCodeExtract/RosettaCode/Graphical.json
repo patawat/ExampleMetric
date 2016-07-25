@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/User_input/Graphical","codeArray":["var str = prompt(\"Enter a string\");\n  var value = 0;\n  while (value != 75000) {\n      value = parseInt( prompt(\"Enter the number 75000\") );\n  }"],"uncertainCodeArray":[],"textArray":[]}

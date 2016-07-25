@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/String_interpolation_(included)","codeArray":["var original = \"Mary had a X lamb\";\n  var little = \"little\";\n  var replaced = original.replace(\"X\", little); //does not change the original string// ECMAScript 6\n  var X = \"little\";\n  var replaced = `Mary had a ${X} lamb`;"],"uncertainCodeArray":[],"textArray":[]}

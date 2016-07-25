@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Keyboard_macros","codeArray":["document.onkeydown = function(evt) {\n    if (evt.keyCode === 118) {\n      alert(\"You pressed F7!\");\n      return false;\n    }\n  }"],"uncertainCodeArray":[],"textArray":[]}

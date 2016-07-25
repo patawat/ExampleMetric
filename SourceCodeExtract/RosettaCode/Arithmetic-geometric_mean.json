@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Arithmetic-geometric_mean","codeArray":["function agm(a0,g0){\n  var an=(a0+g0)/2,gn=Math.sqrt(a0*g0);\n  while(Math.abs(an-gn)>tolerance){\n  an=(an+gn)/2,gn=Math.sqrt(an*gn)\n  }\n  return an;\n  }\n  agm(1,1/Math.sqrt(2));"],"uncertainCodeArray":[],"textArray":[]}

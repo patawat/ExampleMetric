@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Leap_year","codeArray":["var isLeapYear = function (year) { return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0); };// Month values start at 0, so 1 is for February\n  var isLeapYear = function (year) { return new Date(year, 1, 29).getDate() === 29; };"],"uncertainCodeArray":[],"textArray":[]}

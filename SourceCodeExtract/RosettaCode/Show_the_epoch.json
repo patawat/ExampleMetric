@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Show_the_epoch","codeArray":["document.write(new Date(0).toUTCString());"],"uncertainCodeArray":[],"textArray":[]}

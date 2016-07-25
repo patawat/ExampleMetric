@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Sort_an_integer_array","codeArray":["function int_arr(a, b) {\n    return a - b;\n  }\n  var numbers = [20, 7, 65, 10, 3, 0, 8, -60];\n  numbers.sort(int_arr);\n  document.write(numbers);"],"uncertainCodeArray":[],"textArray":[]}

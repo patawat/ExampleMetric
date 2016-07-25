@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Polymorphic_copy","codeArray":["function clone(obj){\n      if (obj == null || typeof(obj) != 'object')\n          return obj;\n      var temp = {};\n      for (var key in obj)\n          temp[key] = clone(obj[key]);\n      return temp;\n  }"],"uncertainCodeArray":[],"textArray":[]}

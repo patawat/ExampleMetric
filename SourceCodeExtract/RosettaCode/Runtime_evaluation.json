@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Runtime_evaluation","codeArray":[" var foo = eval('{value: 42}');\n  eval('var bar = \"Hello, world!\";');\n  typeof foo; // 'object'\n  typeof bar; // 'string'"],"uncertainCodeArray":[],"textArray":[]}

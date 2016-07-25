@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/User:Frap/Reverse_domain_name_notation","codeArray":["function reverseDomain(domain) {\n      return domain.split('.').reverse().join('.');\n  }"],"uncertainCodeArray":[],"textArray":[]}

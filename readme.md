@@ -6,7 +6,11 @@ Download from www.nodejs.org
 ```
 $ npm install eslint
 ```
-### Step 3: Run nodejs
+### Step 3: Install sloc
+```
+$ npm install sloc
+```
+### Step 4: Run nodejs
 ```
 $ node app.js
 ```

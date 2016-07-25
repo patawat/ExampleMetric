@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Audio_Overlap_Loop","codeArray":["<script>\n  var j = prompt(\"Enter the sound manipulation level you want\", \"\");\n  for(i=0; i<j; i++) {\n      document.write(\"<bgsound src='loop.wav'>\")\n  }\n  </script>"],"uncertainCodeArray":[],"textArray":[]}

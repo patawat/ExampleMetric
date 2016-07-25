@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Dynamic_variable_names","codeArray":["var varname = 'foo';  // pretend a user input that\n  var value = 42;\n  eval('var ' + varname + '=' + value);var varname = prompt('Variable name:');\n  var value = 42;\n  this[varname] = value;"],"uncertainCodeArray":[],"textArray":[]}

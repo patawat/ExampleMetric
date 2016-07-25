@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/File_modification_time","codeArray":["var fso = new ActiveXObject(\"Scripting.FileSystemObject\");\n  var f = fso.GetFile('input.txt');\n  var mtime = f.DateLastModified;var file = document.getElementById(\"fileInput\").files.item(0);\n  var last_modified = file.lastModifiedDate;"],"uncertainCodeArray":[],"textArray":[]}

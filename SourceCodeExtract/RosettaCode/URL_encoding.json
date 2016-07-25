@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/URL_encoding","codeArray":["var normal = 'http://foo/bar/';\n  var encoded = encodeURIComponent(normal);"],"uncertainCodeArray":[],"textArray":[]}

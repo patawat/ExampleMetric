@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org/wiki/Jensen%27s_Device","codeArray":["var obj;\n  function sum(o, lo, hi, term) {\n    var tmp = 0;\n    for (o.val = lo; o.val <= hi; o.val++)\n      tmp += term();\n    return tmp;\n  }\n  obj = {val: 0};\n  alert(sum(obj, 1, 100, function() {return 1 / obj.val}));"],"uncertainCodeArray":[],"textArray":[]}

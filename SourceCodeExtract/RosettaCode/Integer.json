@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Literals/Integer","codeArray":["if ( 727 == 0x2d7 && \n       727 == 01327 )\n      window.alert(\"true\");"],"uncertainCodeArray":[],"textArray":[]}

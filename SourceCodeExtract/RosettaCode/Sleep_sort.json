@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Sorting_algorithms/Sleep_sort","codeArray":["Array.prototype.timeoutSort = function (f) {\n  \tthis.forEach(function (n) {\n  \t\tsetTimeout(function () { f(n) }, 5 * n)\n  \t});\n  }\n   [1, 9, 8, 7, 6, 5, 3, 4, 5, 2, 0].timeoutSort(function(n) { document.write(n + 'br'); })"],"uncertainCodeArray":[],"textArray":[]}

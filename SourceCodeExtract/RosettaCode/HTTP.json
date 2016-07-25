@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/HTTP","codeArray":["var req = new XMLHttpRequest();\n  req.onload = function() {\n    console.log(this.responseText);\n  };\n  req.open('get', 'http://rosettacode.org', true);\n  req.send()$.get('http://rosettacode.org', function(data) {\n    console.log(data);\n  };"],"uncertainCodeArray":[],"textArray":[]}

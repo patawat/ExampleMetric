@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Hello_world/Newline_omission","codeArray":["process.stdout.write(\"Goodbye, World!\");"],"uncertainCodeArray":[],"textArray":[]}

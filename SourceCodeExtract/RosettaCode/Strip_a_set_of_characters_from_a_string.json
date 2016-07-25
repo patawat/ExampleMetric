@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Strip_a_set_of_characters_from_a_string","codeArray":["function stripchars(string, chars) {\n    return string.replace(RegExp('['+chars+']','g'), '');\n  }"],"uncertainCodeArray":[],"textArray":[]}

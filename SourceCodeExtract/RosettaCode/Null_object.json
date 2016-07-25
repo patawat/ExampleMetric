@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Null_object","codeArray":["if (object === null) {\n    alert(\"object is null\");\n    // The object is nothing\n  }\n  typeof null === \"object\"; // This stands since the beginning of JavaScript"],"uncertainCodeArray":[],"textArray":[]}

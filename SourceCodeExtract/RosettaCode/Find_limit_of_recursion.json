@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Find_limit_of_recursion","codeArray":[" function recurse(depth)\n  {\n   try\n   {\n    return recurse(depth + 1);\n   }\n   catch(ex)\n   {\n    return depth;\n   }\n  }\n  var maxRecursion = recurse(1);\n  document.write(\"Recursion depth on this system is \" + maxRecursion);"],"uncertainCodeArray":[],"textArray":[]}

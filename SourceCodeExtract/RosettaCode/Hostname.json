@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Hostname","codeArray":["var network = new ActiveXObject('WScript.Network');\n  var hostname = network.computerName;\n  WScript.echo(hostname);"],"uncertainCodeArray":[],"textArray":[]}

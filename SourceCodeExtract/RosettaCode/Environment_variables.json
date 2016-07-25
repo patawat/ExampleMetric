@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Environment_variables","codeArray":["var shell = new ActiveXObject(\"WScript.Shell\");\n  var env = shell.Environment(\"PROCESS\");\n  WScript.echo('SYSTEMROOT=' + env.item('SYSTEMROOT'));"],"uncertainCodeArray":[],"textArray":[]}
