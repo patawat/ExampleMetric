@@ -1,12 +1,9 @@
 [
     "no-comma-dangle",
-    "no-constant-condition",
     "no-extra-semi",
-    "complexity",
     "curly",
     "dot-location",
     "eqeqeq",
-    "no-case-declarations",
     "no-floating-decimal",
     "no-multi-str",
     "vars-on-top",
@@ -22,5 +19,6 @@
     "max-statements-per-line",
     "no-bitwise",
     "LOC",
-    "NCLOC"
+    "NCLOC",
+    "Url"
 ]

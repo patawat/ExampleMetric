@@ -28,14 +28,14 @@ function mapping(errorMessage, sloc){
             else if(map[errorMessage.results[0].messages[count].ruleId] === 0){
                 map[errorMessage.results[0].messages[count].ruleId] = 1;
             }
-
             else{
-                map[errorMessage.results[0].messages[count]] += 1;
+                //..console.log("test"+);
+                map[errorMessage.results[0].messages[count].ruleId] += 1;
             }
         }
         map["LOC"] = sloc.total;
         map["NCLOC"] = sloc.comment;
-        
+
     return map;
 }
 

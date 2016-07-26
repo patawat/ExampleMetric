@@ -5,7 +5,8 @@ function readCodeFile(source) {
 }
 
 function getAllSourceCode(folderPath, callbackFunc) {
-let codeArray = [];
+let codeData = [];
+
 	fs.readdir(folderPath, (err, files) => {
 		if (err) {
 			console.log(err);
@@ -16,11 +17,14 @@ let codeArray = [];
 		files.forEach((file) => {
 			if (!file.includes('.DS_Store')) {
 				let data = readCodeFile(folderPath + '/' + file)
-				let curCodeArray = JSON.parse(data).codeArray;
-				codeArray.push(curCodeArray);
+				let curCodeData = {};
+				let parsedData = JSON.parse(data);
+				curCodeData.code = parsedData.codeArray;
+				curCodeData.url = parsedData.url;
+				codeData.push(curCodeData);
 			}
 		});
-		callbackFunc(codeArray);
+		callbackFunc(codeData);
 		//console.log("hi");
 		//return test;
 

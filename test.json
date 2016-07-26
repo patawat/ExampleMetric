@@ -1,6 +1,6 @@
 
     [
-        {"message":  "var x = 0","Label" : "Good"},
+        {"message":  "var x = 0 \n var x = 0","Label" : "Good"},
         {"message":  "test = 3>2;","Label" : "Good"},
         {"message":  "$(document).ready(function()","Label" : "Bad"}
     ]
