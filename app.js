@@ -26,7 +26,7 @@ codeExtractor.getAllSourceCode('/Users/patawat/Desktop/ExampleMetric/SourceCodeE
 
 function convertToCSV(result){
     var B = [];
-    console.log("test");
+
     for(var count = 0 ; count < rules.length ; count++){
         B.push(rules[count]);
     }

@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Introspection","codeArray":["if (typeof bloop !== \"undefined\") { ... }if (\"abs\" in Math) { ... }"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Introspection","codeArray":["if (typeof bloop !== \"undefined\") {...\n}","if (\"abs\" in Math) {...\n}"],"uncertainCodeArray":[],"textArray":[]}

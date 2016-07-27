@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Multiple_distinct_objects","codeArray":["var a = new Array(n);\n  for (var i = 0; i < n; i++)\n    a[i] = new Foo();"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Multiple_distinct_objects","codeArray":["var a = new Array(n);\nfor (var i = 0; i < n; i++)\n    a[i] = new Foo();"],"uncertainCodeArray":[],"textArray":[]}

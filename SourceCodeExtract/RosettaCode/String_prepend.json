@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/String_prepend","codeArray":["// No built-in prepend\n  var s=\", World\"\n  s = \"Hello\" + s\n  print(s);"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/String_prepend","codeArray":["// No built-in prepend\nvar s = \", World\"\ns = \"Hello\" + s\nprint(s);"],"uncertainCodeArray":[],"textArray":[]}

@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Add_a_variable_to_a_class_instance_at_runtime","codeArray":["e = {}       // generic object\n  e.foo = 1\n  e[\"bar\"] = 2    // name specified at runtime"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Add_a_variable_to_a_class_instance_at_runtime","codeArray":["e = {} // generic object\ne.foo = 1\ne[\"bar\"] = 2 // name specified at runtime"],"uncertainCodeArray":[],"textArray":[]}

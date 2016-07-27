@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/System_time","codeArray":["console.log(new Date()) // => Sat, 28 May 2011 08:22:53 GMT\n  console.log(Date.now()) // => 1306571005417 // Unix epoch"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/System_time","codeArray":["console.log(new Date()) // => Sat, 28 May 2011 08:22:53 GMT\nconsole.log(Date.now()) // => 1306571005417 // Unix epoch"],"uncertainCodeArray":[],"textArray":[]}

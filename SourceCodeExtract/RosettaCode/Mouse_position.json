@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Mouse_position","codeArray":["document.addEventListener('mousemove', function(e){\n    var position = { x: e.clientX, y: e.clientY }\n  }"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Mouse_position","codeArray":["document.addEventListener('mousemove', function(e) {\n            var position = {\n                x: e.clientX,\n                y: e.clientY\n            }\n        }"],"uncertainCodeArray":[],"textArray":[]}

@@ -1,0 +1,1 @@
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Reflection/Get_source","codeArray":["function foo() {...\n}\nfoo.toString();\n// \"function foo() {...}\"","Math.sqrt.toString();\n// \"function sqrt() { [native code] }\""],"uncertainCodeArray":[],"textArray":[]}

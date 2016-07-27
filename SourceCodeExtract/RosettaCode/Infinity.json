@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Infinity","codeArray":["InfinityNumber.POSITIVE_INFINITY\n  Number.NEGATIVE_INFINITYisFinite(x)"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Infinity","codeArray":["Infinity","Number.POSITIVE_INFINITY\nNumber.NEGATIVE_INFINITY","isFinite(x)"],"uncertainCodeArray":[],"textArray":[]}

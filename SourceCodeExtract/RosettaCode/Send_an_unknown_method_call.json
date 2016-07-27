@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Send_an_unknown_method_call","codeArray":["example = new Object;\n  example.foo = function(x) {\n      return 42 + x;\n  };\n  name = \"foo\";\n  example[name](5)      # => 47"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Send_an_unknown_method_call","codeArray":["example = new Object;\nexample.foo = function(x) {\n    return 42 + x;\n};\nname = \"foo\";\nexample[name](5)# => 47"],"uncertainCodeArray":[],"textArray":[]}

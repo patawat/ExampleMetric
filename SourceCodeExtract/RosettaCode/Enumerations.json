@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Enumerations","codeArray":[" var fruits = { APPLE : 0, BANANA : 1, CHERRY : 2 };\n  Object.freeze(fruits);"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Enumerations","codeArray":[" var fruits = {\n     APPLE: 0,\n     BANANA: 1,\n     CHERRY: 2\n };\n Object.freeze(fruits);"],"uncertainCodeArray":[],"textArray":[]}

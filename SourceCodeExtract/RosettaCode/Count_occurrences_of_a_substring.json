@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Count_occurrences_of_a_substring","codeArray":["function countSubstring(str, subStr) {\n      var matches = str.match(new RegExp(subStr, \"g\"));\n      return matches ? matches.length : 0;\n  }"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Count_occurrences_of_a_substring","codeArray":["function countSubstring(str, subStr) {\n    var matches = str.match(new RegExp(subStr, \"g\"));\n    return matches ? matches.length : 0;\n}"],"uncertainCodeArray":[],"textArray":[]}

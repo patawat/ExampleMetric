@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Speech_synthesis","codeArray":["var voice = new ActiveXObject(\"SAPI.SpVoice\");\n  voice.speak(\"This is an example of speech synthesis.\");"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Speech_synthesis","codeArray":["var voice = new ActiveXObject(\"SAPI.SpVoice\");\nvoice.speak(\"This is an example of speech synthesis.\");"],"uncertainCodeArray":[],"textArray":[]}

@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Empty_string","codeArray":["var s = \"\";\n  var s = new String();s == \"\"\n  s.length == 0\n  !s\n  !Boolean(s)!!s\n  s != \"\"\n  s.length != 0\n  s.length > 0\n  Boolean(s)"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Empty_string","codeArray":["var s = \"\";\nvar s = new String();","s == \"\"\ns.length == 0!s!Boolean(s)","!!s\ns != \"\"\ns.length != 0\ns.length > 0\nBoolean(s)"],"uncertainCodeArray":[],"textArray":[]}

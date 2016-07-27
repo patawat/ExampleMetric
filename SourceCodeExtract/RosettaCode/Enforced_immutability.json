@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Enforced_immutability","codeArray":["const pi = 3.1415;\n  const msg = \"Hello World\";"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Enforced_immutability","codeArray":["const pi = 3.1415;\nconst msg = \"Hello World\";"],"uncertainCodeArray":[],"textArray":[]}

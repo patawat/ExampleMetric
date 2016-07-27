@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Real_constants_and_functions","codeArray":["Math.E\n  Math.PI\n  Math.sqrt(x)\n  Math.log(x)\n  Math.exp(x)\n  Math.abs(x)\n  Math.floor(x)\n  Math.ceil(x)\n  Math.pow(x,y)"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Real_constants_and_functions","codeArray":["Math.E\nMath.PI\nMath.sqrt(x)\nMath.log(x)\nMath.exp(x)\nMath.abs(x)\nMath.floor(x)\nMath.ceil(x)\nMath.pow(x, y)"],"uncertainCodeArray":[],"textArray":[]}

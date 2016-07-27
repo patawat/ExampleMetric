@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Logical_operations","codeArray":["function logic(a,b) {\n    print(\"a AND b: \" + (a && b));\n    print(\"a OR b: \" + (a || b));\n    print(\"NOT a: \" + (!a));\n  }"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Logical_operations","codeArray":["function logic(a, b) {\n    print(\"a AND b: \" + (a && b));\n    print(\"a OR b: \" + (a || b));\n    print(\"NOT a: \" + (!a));\n}"],"uncertainCodeArray":[],"textArray":[]}

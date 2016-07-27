@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/Program_termination","codeArray":["if (some_condition) \n      quit();"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/Program_termination","codeArray":["if (some_condition)\n    quit();"],"uncertainCodeArray":[],"textArray":[]}

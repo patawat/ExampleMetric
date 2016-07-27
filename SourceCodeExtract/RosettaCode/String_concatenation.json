@@ -1,1 +1,1 @@
-{"isSuccess":true,"url":"http://rosettacode.org//wiki/String_concatenation","codeArray":["var s = \"hello\"\n  print(s + \" there!\")"],"uncertainCodeArray":[],"textArray":[]}
+{"isSuccess":true,"url":"http://rosettacode.org//wiki/String_concatenation","codeArray":["var s = \"hello\"\nprint(s + \" there!\")"],"uncertainCodeArray":[],"textArray":[]}
