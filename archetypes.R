@@ -3,7 +3,7 @@ library('archetypes')
 
 #Load model
 d1 = read.csv('~/Desktop/ExampleMetric/result.csv')
-d2 = d1[1:16]
+d2 = d1[1:15]
 url = d1$Url
 View(d1)
 

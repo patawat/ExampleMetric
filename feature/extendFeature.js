@@ -7,11 +7,10 @@ var espree = require("espree");
  */
 function extendFeature(text){
     this.text = text;
-try {
+//try {
     this.ast = espree.parse(text);
-} catch (e) {
-
-}
+// } catch (e) {
+// }
 }
 
 extendFeature.prototype = {
@@ -58,19 +57,31 @@ extendFeature.prototype = {
     },
     mostDepth(){
 
-        var result = 1;
-        for (var i = 0; i < this.ast.body.length; i++) {
-            if (this.ast.body[i].consequent !== undefined) {
-                if (result < this.countDepth(this.ast.body[i].consequent)+1) {
-                    result = this.countDepth(this.ast.body[i].consequent)+1;
-                }
-            }
-        }
+        // var result = 1;
+        // for (var i = 0; i < this.ast.body.length; i++) {
+        //     if (this.ast.body[i].consequent !== undefined) {
+        //         if (result < this.countDepth(this.ast.body[i].consequent)+1) {
+        //             result = this.countDepth(this.ast.body[i].consequent)+1;
+        //         }
+        //     }
+        // }
+        var result = countDepth(this.ast);
         return result;
 
     }
 
 
 };
+function countDepth(ast){
+    var result = 1;
+    for (var i = 0; i < ast.body.length; i++) {
+        if (ast.body[i].consequent !== undefined) {
+            if (result < countDepth(ast.body[i].consequent)+1) {
+                result = countDepth(ast.body[i].consequent)+1;
+            }
+        }
+    }
+    return result;
+}
 
 module.exports = extendFeature;

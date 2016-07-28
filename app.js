@@ -15,7 +15,13 @@ codeExtractor.getAllSourceCode('/Users/patawat/Desktop/ExampleMetric/SourceCodeE
         for(let i = 0; i < dataArray[count].code.length; i++){
             var engine = new mainEngine(String(dataArray[count].code[i]));
     		let engineResult = engine.getResult();
-    		engineResult['Url'] = dataArray[count].url;
+            //console.log(engineResult['Url']);
+            try {
+                engineResult['Url'] = dataArray[count].url;
+
+            } catch (e) {
+
+            }
 
             result.push(engineResult);
         }

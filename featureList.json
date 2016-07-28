@@ -1,5 +1,4 @@
 [
-    "no-comma-dangle",
     "curly",
     "dot-location",
     "eqeqeq",
@@ -14,6 +13,9 @@
     "LOC",
     "NCLOC",
     "codePerLine",
+    "emptyLine",
+    "mixLOC",
+    "paremeter",
+    "mostDepth",
     "Url"
-
 ]

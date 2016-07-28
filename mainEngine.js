@@ -36,9 +36,14 @@ function mapping(errorMessage, sloc, exFeature){
         }
         map["LOC"] = sloc.total;
         map["NCLOC"] = sloc.comment;
+        map["mixLOC"] = sloc.mixed;
+        map["emptyLine"] = sloc.empty;
         map["codePerLine"] = exFeature.getAvgCharline();
+        map["paremeter"] = exFeature.AvgParem();
+        map["mostDepth"] = exFeature.mostDepth();
+        
         // try {
-        //     console.log(exFeature.mostDepth());
+            // console.log(exFeature.AvgParem());
         // } catch (e) {
         //
         // }
@@ -56,8 +61,13 @@ function mainEngine(text){
     var cli = new CLIEngine();
     this.result = cli.executeOnText(text,"test");
     this.sloc = sloc(text,'js');
-    var exFeature = new feature(text);
-    this.dict = mapping(this.result, this.sloc, exFeature);
+    try {
+        var exFeature = new feature(text);
+        this.dict = mapping(this.result, this.sloc, exFeature);
+    } catch (e) {
+
+    }
+
 }
 
 mainEngine.prototype = {
