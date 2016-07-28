@@ -15,10 +15,11 @@
     "max-depth",
     "max-len",
     "max-params",
-    "max-statements",
     "max-statements-per-line",
     "no-bitwise",
     "LOC",
     "NCLOC",
+    "codePerLine",
     "Url"
+
 ]

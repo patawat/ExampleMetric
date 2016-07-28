@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var CLIEngine = require("eslint").CLIEngine;
+var feature = require("./feature/extendFeature");
 var sloc  = require('sloc');
 var rules = require('./featureList')
 
@@ -14,7 +15,7 @@ function getDictionary(){
     return dict;
 }
 
-function mapping(errorMessage, sloc){
+function mapping(errorMessage, sloc, exFeature){
     var map = getDictionary();
     if(errorMessage.results[0].messages.length === 0){
             return;
@@ -35,6 +36,14 @@ function mapping(errorMessage, sloc){
         }
         map["LOC"] = sloc.total;
         map["NCLOC"] = sloc.comment;
+        map["codePerLine"] = exFeature.getAvgCharline();
+        // try {
+        //     console.log(exFeature.mostDepth());
+        // } catch (e) {
+        //
+        // }
+
+        //console.log(exFeature.getAvgCharline());
 
     return map;
 }
@@ -47,7 +56,8 @@ function mainEngine(text){
     var cli = new CLIEngine();
     this.result = cli.executeOnText(text,"test");
     this.sloc = sloc(text,'js');
-    this.dict = mapping(this.result, this.sloc);
+    var exFeature = new feature(text);
+    this.dict = mapping(this.result, this.sloc, exFeature);
 }
 
 mainEngine.prototype = {

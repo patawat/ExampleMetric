@@ -34,7 +34,7 @@ module.exports = {
       "max-depth": 1,       // specify the maximum depth that blocks can be nested (off by default)
       "max-len": 1,         // specify the maximum length of a line in your program (off by default)
       "max-params": 1,      // limits the number of parameters that can be used in the function declaration. (off by default)
-      "max-statements": 1,  // specify the maximum number of statement allowed in a function (off by default)
+      //"max-statements": 1,  // specify the maximum number of statement allowed in a function (off by default)
       "max-statements-per-line": 1,
       "no-bitwise": 1,      // disallow use of bitwise operators (off by default)
 }
