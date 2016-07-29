@@ -34,21 +34,15 @@ function mapping(errorMessage, sloc, exFeature){
                 map[errorMessage.results[0].messages[count].ruleId] += 1;
             }
         }
-        map["LOC"] = sloc.total;
-        map["NCLOC"] = sloc.comment;
+        map["LOC"] = sloc.total
+        map["SLOC"] = sloc.source;
+        map["comment"] = sloc.comment;
         map["mixLOC"] = sloc.mixed;
         map["emptyLine"] = sloc.empty;
+
+
         map["codePerLine"] = exFeature.getAvgCharline();
         map["paremeter"] = exFeature.AvgParem();
-        map["mostDepth"] = exFeature.mostDepth();
-        
-        // try {
-            // console.log(exFeature.AvgParem());
-        // } catch (e) {
-        //
-        // }
-
-        //console.log(exFeature.getAvgCharline());
 
     return map;
 }

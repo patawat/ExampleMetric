@@ -9,13 +9,15 @@
     "semi",
     "max-len",
     "max-statements",
+    "max-statements-per-line",
     "no-bitwise",
     "LOC",
-    "NCLOC",
-    "codePerLine",
+    "SLOC",
+    "comment",
+    "mixLOC",
     "emptyLine",
+    "codePerLine",
     "mixLOC",
     "paremeter",
-    "mostDepth",
     "Url"
 ]

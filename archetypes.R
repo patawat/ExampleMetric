@@ -3,18 +3,20 @@ library('archetypes')
 
 #Load model
 d1 = read.csv('~/Desktop/ExampleMetric/result.csv')
-d2 = d1[1:15]
+d2 = d1[14:17]
 url = d1$Url
-View(d1)
+View(d2)
 
-pcplot(d2)
+#pcplot(d2)
 
 set.seed(1981)
 
 #Create Archetypes
 as <- stepArchetypes(d2, k = 1:15, verbose = FALSE, nrep = 3)
 screeplot(as)
-a3 <- bestModel(as[[5]])
+
+a3 <- bestModel(as[[3]])
+
 
 #Get coefficients
 cof <- coefficients(a3)
@@ -22,7 +24,10 @@ cof <- coefficients(a3)
 y <- data.frame(d1,cof)
 write.table(y, file = '/Users/patawat/Desktop/ExampleMetric/Result/ResultFromR.csv', row.names=FALSE,col.names=TRUE,sep=",")
 
-nparameters(a3)
+
+
+#nparameters(a3)
+
 rss(as[2])
 
 t(parameters(a3))
