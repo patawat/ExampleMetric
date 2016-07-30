@@ -63,6 +63,10 @@ extendFeature.prototype = {
         var result = countVarLength(this.ast);
         return result;
     },
+    loop(){
+        var result = countLoop(this.ast);
+        return result;
+    },
     mostDepth(){
         var result = countDepth(this.ast);
         return result;
@@ -149,6 +153,38 @@ function countVarLength(ast){
     }
     return sumOfLength/numOfVar;
 
+}
+
+function countLoop(ast){
+    var result = 0;
+
+    if (ast.body !== undefined) {
+        for (var i = 0; i < ast.body.length; i++) {
+            if (ast.body[i].consequent !== undefined) {
+                result += countLoop(ast.body[i].consequent);
+            }
+            else if(ast.body[i].body !== undefined){
+                result += countLoop(ast.body[i].body);
+            }
+            if(ast.body[i].type === "ForStatement" || ast.body[i].type === "WhileStatement"){
+                result += 1;
+            }
+
+            if (ast.body[i].alternate !== undefined && ast.body[i].alternate !== null) {
+
+                result += countLoop(ast.body[i].alternate);
+            }
+        }
+    }else{
+        if (ast.alternate !== undefined && ast.alternate !== null) {
+            result += countLoop(ast.alternate);
+        }
+        if(ast.consequent !== undefined && ast.consequent !== null){
+            result += countLoop(ast.consequent);
+        }
+    }
+
+     return result;
 }
 
 function countDepth(ast){

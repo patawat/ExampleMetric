@@ -45,6 +45,7 @@ function mapping( errorMessage, sloc, exFeature ){
         map["paremeter"] = exFeature.AvgParem();
         map["identifiers"] = exFeature.identifiers();
         map["identifiersLength"] = exFeature.identifiersLength();
+        map["loop"] = exFeature.loop();
     return map;
 }
 
