@@ -1,23 +1,37 @@
 [
+    "no-cond-assign",
+    "no-constant-condition",
+    "no-empty",
+    "no-irregular-whitespace",
+
+    "complexity",
     "curly",
     "dot-location",
     "eqeqeq",
     "vars-on-top",
+
+    "no-undef",
     "no-unused-vars",
     "no-use-before-define",
     "id-length",
     "semi",
+
+    "max-depth",
     "max-len",
+    "max-params",
     "max-statements",
     "max-statements-per-line",
     "no-bitwise",
+
     "LOC",
     "SLOC",
     "comment",
     "mixLOC",
     "emptyLine",
-    "codePerLine",
     "mixLOC",
+
+    "codePerLine",
     "paremeter",
+
     "Url"
 ]
