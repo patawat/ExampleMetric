@@ -59,16 +59,11 @@ extendFeature.prototype = {
         var result = countVar(this.ast);
         return result;
     },
+    identifiersLength(){
+        var result = countVarLength(this.ast);
+        return result;
+    },
     mostDepth(){
-
-        // var result = 1;
-        // for (var i = 0; i < this.ast.body.length; i++) {
-        //     if (this.ast.body[i].consequent !== undefined) {
-        //         if (result < this.countDepth(this.ast.body[i].consequent)+1) {
-        //             result = this.countDepth(this.ast.body[i].consequent)+1;
-        //         }
-        //     }
-        // }
         var result = countDepth(this.ast);
         return result;
 
@@ -108,6 +103,52 @@ function countVar(ast){
     }
 
     return result;
+}
+
+function countVarLength(ast){
+
+    var numOfVar = 0;
+    var sumOfLength = 0;
+
+
+    if (ast.body !== undefined) {
+        for (var i = 0; i < ast.body.length; i++) {
+            if (ast.body[i].consequent !== undefined) {
+                sumOfLength += countVarLength(ast.body[i].consequent);
+                numOfVar += 1;
+            }
+            else if(ast.body[i].body !== undefined){
+                sumOfLength += countVarLength(ast.body[i].body);
+                numOfVar += 1;
+            }
+            else if(ast.body[i].type === "VariableDeclaration" && ast.body[i].declarations !== undefined){
+                numOfVar += ast.body[i].declarations.length;
+                for (var count = 0; count < ast.body[i].declarations.length; count++) {
+                    sumOfLength += ast.body[i].declarations[count].id.name.length;
+                }
+            }
+
+            if (ast.body[i].alternate !== undefined && ast.body[i].alternate !== null) {
+
+                sumOfLength += countVarLength(ast.body[i].alternate);
+                numOfVar += 1;
+            }
+        }
+    }else{
+        if (ast.alternate !== undefined && ast.alternate !== null) {
+            sumOfLength += countVarLength(ast.alternate);
+            numOfVar += 1;
+        }
+        if(ast.consequent !== undefined && ast.consequent !== null){
+            sumOfLength += countVarLength(ast.consequent);
+            numOfVar += 1;
+        }
+    }
+    if (sumOfLength === 0) {
+        return 0;
+    }
+    return sumOfLength/numOfVar;
+
 }
 
 function countDepth(ast){

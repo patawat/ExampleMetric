@@ -44,6 +44,7 @@ function mapping( errorMessage, sloc, exFeature ){
         map["codePerLine"] = exFeature.getAvgCharline();
         map["paremeter"] = exFeature.AvgParem();
         map["identifiers"] = exFeature.identifiers();
+        map["identifiersLength"] = exFeature.identifiersLength();
     return map;
 }
 
