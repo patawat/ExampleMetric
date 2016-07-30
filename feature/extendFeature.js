@@ -55,6 +55,10 @@ extendFeature.prototype = {
 
         return result;
     },
+    identifiers(){
+        var result = countVar(this.ast);
+        return result;
+    },
     mostDepth(){
 
         // var result = 1;
@@ -72,6 +76,40 @@ extendFeature.prototype = {
 
 
 };
+function countVar(ast){
+    var result = 0;
+    if (ast.body !== undefined) {
+        for (var i = 0; i < ast.body.length; i++) {
+            if (ast.body[i].consequent !== undefined) {
+                result += countVar(ast.body[i].consequent);
+            }
+            else if(ast.body[i].body !== undefined){
+                result += countVar(ast.body[i].body);
+            }
+            else if(ast.body[i].type === "VariableDeclaration" && ast.body[i].declarations !== undefined){
+                result += ast.body[i].declarations.length;
+            }
+            else if (ast.body[i].type === "VariableDeclaration") {
+                result += 1;
+            }
+
+            if (ast.body[i].alternate !== undefined && ast.body[i].alternate !== null) {
+
+                result += countVar(ast.body[i].alternate);
+            }
+        }
+    }else{
+        if (ast.alternate !== undefined && ast.alternate !== null) {
+            result += countVar(ast.alternate);
+        }
+        if(ast.consequent !== undefined && ast.consequent !== null){
+            result += countVar(ast.consequent);
+        }
+    }
+
+    return result;
+}
+
 function countDepth(ast){
     var result = 1;
     for (var i = 0; i < ast.body.length; i++) {

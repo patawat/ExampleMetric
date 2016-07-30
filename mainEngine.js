@@ -43,7 +43,7 @@ function mapping( errorMessage, sloc, exFeature ){
 
         map["codePerLine"] = exFeature.getAvgCharline();
         map["paremeter"] = exFeature.AvgParem();
-
+        map["identifiers"] = exFeature.identifiers();
     return map;
 }
 
@@ -51,7 +51,7 @@ function mapping( errorMessage, sloc, exFeature ){
  * @constructor
  */
 function mainEngine(text){
-    
+
     this.text = text;
     var cli = new CLIEngine({"extends": "eslint:recommended"});
     this.result = cli.executeOnText(text,"test");
