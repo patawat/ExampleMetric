@@ -47,6 +47,8 @@ function mapping( errorMessage, sloc, exFeature ){
         map["identifiersLength"] = exFeature.identifiersLength();
         map["loop"] = exFeature.loop();
         map["Branch"] = exFeature.Branch();
+        map["ExpressionStatement"] = exFeature.ExpressionStatement();
+        
     return map;
 }
 

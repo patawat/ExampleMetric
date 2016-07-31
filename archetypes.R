@@ -3,7 +3,7 @@ library('archetypes')
 
 #Load model
 d1 = read.csv('~/Desktop/ExampleMetric/result.csv')
-d2 = d1[1:20]
+d2 = d1[27:33]
 url = d1$Url
 View(d2)
 
@@ -15,7 +15,7 @@ set.seed(1981)
 as <- stepArchetypes(d2, k = 1:15, verbose = FALSE, nrep = 3)
 screeplot(as)
 
-a3 <- bestModel(as[[4]])
+a3 <- bestModel(as[[5]])
 
 
 #Get coefficients

@@ -67,8 +67,12 @@ extendFeature.prototype = {
         var result = countLoop(this.ast);
         return result;
     },
-    Branch(ast){
+    Branch(){
         var result = countBranch(this.ast);
+        return result;
+    },
+    ExpressionStatement(){
+        var result = countExpression(this.ast);
         return result;
     },
     mostDepth(){
@@ -225,6 +229,44 @@ function countBranch(ast){
 
      return result;
 
+}
+
+function countExpression(ast){
+    var result = 0;
+    if (ast.body !== undefined) {
+        for (var i = 0; i < ast.body.length; i++) {
+            if (ast.body[i].consequent !== undefined) {
+                result += countExpression(ast.body[i].consequent);
+            }
+            else if(ast.body[i].body !== undefined){
+                result += countExpression(ast.body[i].body);
+            }
+
+            if (ast.body[i].type === "ExpressionStatement") {
+
+                result += 1;
+            }
+
+            if (ast.body[i].alternate !== undefined && ast.body[i].alternate !== null) {
+
+                result += countExpression(ast.body[i].alternate);
+            }
+        }
+    }else{
+        if (ast.body[i].type === "ExpressionStatement") {
+
+            result += 1;
+        }
+
+        if (ast.alternate !== undefined && ast.alternate !== null) {
+            result += countExpression(ast.alternate);
+        }
+        if(ast.consequent !== undefined && ast.consequent !== null){
+            result += countExpression(ast.consequent);
+        }
+    }
+
+    return result;
 }
 
 function countDepth(ast){

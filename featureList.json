@@ -28,7 +28,6 @@
     "comment",
     "mixLOC",
     "emptyLine",
-    "mixLOC",
 
     "codePerLine",
     "paremeter",
@@ -36,6 +35,7 @@
     "identifiersLength",
     "loop",
     "Branch",
+    "ExpressionStatement",
 
     "Url"
 ]
